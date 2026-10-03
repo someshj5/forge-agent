@@ -1,0 +1,110 @@
+# ===============================
+# Secrets & Environment Variables
+# ===============================
+# Never commit credentials or API keys (OpenAI, Anthropic, Forge, etc.)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ===============================
+# Agent & LLM Local Artifacts
+# ===============================
+# Local vector stores, embeddings, memory databases
+vector_store/
+chroma_db/
+faiss_index/
+*.sqlite
+*.sqlite3
+*.db
+
+# Logs, trace dumps, and run recordings
+logs/
+*.log
+traces/
+agent_outputs/
+runs/
+
+# ===============================
+# Python (if using Python)
+# ===============================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Packaging & Build outputs
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing & Type checking
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# ===============================
+# JavaScript / TypeScript / Node.js
+# ===============================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Build outputs
+.next/
+out/
+build/
+dist/
+.turbo/
+
+# ===============================
+# IDE & Operating System Files
+# ===============================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editors
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
